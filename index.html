@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unsent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Unsent</h1>
+    <p class="subtitle">Say what you never could.</p>
+
+    <button class="scroll-btn" onclick="scrollToForm()">Send a message</button>
+
+    <!-- FORM -->
+    <form id="messageForm">
+      <input type="text" id="receiver" placeholder="Name of the receiver (optional)">
+      <input type="text" id="area" placeholder="Area (e.g. Manchester)">
+      <textarea id="message" placeholder="Your message..."></textarea>
+
+      <input type="color" id="color" value="#ffffff">
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- MESSAGES -->
+    <div class="messages" id="messages">
+      <div class="message">
+        <span style="color:#ff6b6b;">To Katie, "I miss you more than I should" – Manchester</span>
+      </div>
+      <div class="message">
+        <span style="color:#6bc5ff;">To You, "I wish I said something sooner" – London</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
